@@ -1,0 +1,22 @@
+====================================================================
+ANEXO 1 - DOCUMENTAÇÃO DE SOFTWARE (OFICINA MECÂNICA)
+====================================================================
+
+1.1 REQUISITOS FUNCIONAIS DO SISTEMA (Mínimo de 4 requisitos)
+
+- RF01 (Autenticação e Sessão): O sistema deve permitir o login de usuários validando as credenciais no banco de dados, exibindo mensagem de erro em caso de falha e criando uma sessão autenticada com tempo de expiração.
+- RF02 (Funcionalidade Principal): O sistema deve exibir na tela principal o nome do usuário autenticado na sessão, disponibilizar links de acesso aos módulos "Cliente", "Veículo" e "Agendamento", e oferecer a opção de sair do sistema (logout).
+- RF03 (Gerenciamento de Clientes e LGPD): O sistema deve permitir cadastrar, listar, buscar por termo, editar e excluir clientes, garantindo que dados sensíveis (CPF e senha) sejam armazenados criptografados no banco de dados conforme a LGPD.
+- RF04 (Gerenciamento de Veículos): O sistema deve permitir o cadastro e a listagem de veículos, vinculando obrigatoriamente cada novo veículo a um cliente existente no banco de dados.
+- RF05 (Gerenciamento de Agendamentos): O sistema deve permitir cadastrar agendamentos de revisão, atualizar a data de um agendamento existente e listar todos os agendamentos ordenados por data, exibindo os dados completos do veículo e do seu respectivo cliente.
+
+--------------------------------------------------------------------
+
+1.2 LISTA DE REQUISITOS DE INFRAESTRUTURA
+
+- Linguagem de Programação: Python 3
+- Framework Web / Backend: FastAPI (executado via servidor ASGI Uvicorn)
+- Front-end: HTML5 (renderizado pelo próprio FastAPI)
+- Sistema Gerenciador de Banco de Dados (SGBD): MySQL / SQLite3
+- Sistema Operacional: Windows 10 (ou equivalente)
+- Editor de Código / IDE: Visual Studio Code (VS Code)
